@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace LunarChat.Models;
+﻿namespace Api.Models;
 
 public class User
 {

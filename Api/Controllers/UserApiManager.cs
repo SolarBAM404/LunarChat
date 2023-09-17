@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace LunarChat.Controllers.authentication;
 
 [ApiController]
-[ApiVersion("1.0")]
+[ApiVersAp("1.0")]
 [Route("api/user-manager")]
 public class UserApiManager : ControllerBase
 {
