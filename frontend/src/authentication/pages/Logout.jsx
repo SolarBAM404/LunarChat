@@ -1,4 +1,4 @@
-export default function MessageInput () {
+export default function Logout () {
 	return <>
 	<div className={"flex py-3 gap-5 min-w-full"}>
 		<input type="text" placeholder="Type here" className="flex-auto input input-bordered min-w-fit" />

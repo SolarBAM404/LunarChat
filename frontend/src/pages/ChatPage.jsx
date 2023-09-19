@@ -1,11 +1,41 @@
+import {Component} from "react";
+import {HubConnectionBuilder, LogLevel} from "@microsoft/signalr";
+
 import SenderMessage from '../components/Messages/SenderMessage'
 import ReceivedMessage from '../components/Messages/ReceivedMessage'
 import MessageInput from '../components/Messages/MessageInput'
-import {Component} from "react";
 import "./ChatPage.css"
 
+
 export default class ChatPage extends Component {
+
+	connectToHub () {
+		const url = "https://localhost:7243/messages/"
+
+		const connection = new HubConnectionBuilder()
+		    .withUrl(url)
+		    .configureLogging(LogLevel.Information)
+		    .build();
+
+		async function start() {
+			try {
+				await connection.start();
+				console.log("SignalR Connected.");
+			} catch (err) {
+				console.log(err);
+				setTimeout(start, 5000);
+			}
+		};
+
+		connection.onclose(async () => {
+			await start();
+		});
+
+		// Start the connection.
+		start();
+	}
 	render() {
+		this.connectToHub();
 		return (
 			<div className={"flex flex-col h-full"}>
 				<div className={"flex flex-col-reverse flex-auto"}>
