@@ -1,6 +1,6 @@
 using MongoDB.Bson;
 
-namespace LunarChat.DTOs.Conversations;
+namespace Api.DTOs.Conversations;
 
 public class Reactions
 {

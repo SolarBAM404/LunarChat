@@ -1,7 +1,7 @@
 using MongoDB.Bson;
 using MongoDbService.Models;
 
-namespace LunarChat.DTOs.Users;
+namespace Api.DTOs.Users;
 
 public class Blocklist : EntityBase
 {

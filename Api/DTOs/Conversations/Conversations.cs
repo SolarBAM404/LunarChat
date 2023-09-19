@@ -1,6 +1,6 @@
 using MongoDbService.Models;
 
-namespace LunarChat.DTOs.Conversations;
+namespace Api.DTOs.Conversations;
 
 public class Conversations : EntityBase
 {

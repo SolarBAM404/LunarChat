@@ -1,8 +1,9 @@
+using Api.DTOs.Users;
 using AspNetCore.Identity.MongoDbCore.Models;
 using MongoDB.Bson;
 using MongoDbGenericRepository.Attributes;
 
-namespace LunarChat.DTOs.Users;
+namespace Api.DTOs.Users;
 
 [CollectionName("Users")]
 public class ApplicationUser : MongoIdentityUser<ObjectId>

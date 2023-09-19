@@ -1,6 +1,6 @@
 ﻿namespace Api.Models;
 
-public class User
+public class UserModel
 {
 	public String Username { get; set; }
 	public String Email { get; set; }

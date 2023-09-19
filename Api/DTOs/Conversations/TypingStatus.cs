@@ -1,7 +1,7 @@
 using MongoDB.Bson;
 using MongoDbService.Models;
 
-namespace LunarChat.DTOs.Conversations;
+namespace Api.DTOs.Conversations;
 
 public class TypingStatus : EntityBase
 {

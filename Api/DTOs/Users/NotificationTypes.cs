@@ -1,4 +1,4 @@
-namespace LunarChat.DTOs.Users;
+namespace Api.DTOs.Users;
 
 public enum NotificationTypes
 {

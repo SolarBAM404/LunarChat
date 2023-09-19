@@ -1,6 +1,6 @@
 namespace Api.Controllers;
 
-public class LoginUser
+public class LoginUserModel
 {
 	public String Username { get; set; }
 	public String HashPassword { get; set; }

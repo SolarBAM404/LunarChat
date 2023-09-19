@@ -1,6 +1,6 @@
 using MongoDB.Bson;
 
-namespace LunarChat.DTOs.Users;
+namespace Api.DTOs.Users;
 
 public class Contacts
 {

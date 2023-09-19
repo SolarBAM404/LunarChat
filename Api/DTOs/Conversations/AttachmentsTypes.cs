@@ -1,4 +1,4 @@
-namespace LunarChat.DTOs.Conversations;
+namespace Api.DTOs.Conversations;
 
 public enum AttachmentsTypes
 {
